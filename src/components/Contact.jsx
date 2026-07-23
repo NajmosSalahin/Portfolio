@@ -100,11 +100,9 @@ export default function Contact() {
               Want to work together? Drop me a message and I'll get back to you.
             </p>
 
-            {/* Formspree placeholder — replace action URL to activate */}
             <form
-              action="#"
+              action="https://formspree.io/f/xwvgngjz"
               method="POST"
-              onSubmit={(e) => e.preventDefault()}
               className="space-y-4"
             >
               <div className="grid sm:grid-cols-2 gap-4">
@@ -149,9 +147,6 @@ export default function Contact() {
                 <Send size={15} />
                 Send Message
               </button>
-              <p className="text-xs text-center text-warm-muted/60 dark:text-dark-muted/60">
-                Form not active yet. Replace the <code className="font-mono">action</code> attribute with your Formspree endpoint.
-              </p>
             </form>
           </motion.div>
         </div>
