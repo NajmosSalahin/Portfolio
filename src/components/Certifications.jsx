@@ -52,7 +52,7 @@ export default function Certifications() {
               <p className="font-mono text-xs text-warm-muted/60 dark:text-dark-muted/60 mt-1">
                 {cert.date}
               </p>
-              <p className="text-xs text-warm-muted dark:text-dark-muted mt-2 leading-relaxed line-clamp-2">
+              <p className="text-xs text-warm-muted dark:text-dark-muted mt-2 leading-relaxed">
                 {cert.details}
               </p>
               <span className="inline-flex items-center gap-1 text-xs font-mono text-warm-accent dark:text-dark-accent mt-3 opacity-0 group-hover:opacity-100 transition-opacity">
