@@ -2,7 +2,7 @@ export const profile = {
   name: "Md. Najmos Salahin",
   title: "Data Scientist & Full-Stack Developer",
   tagline: "Turning data into applications that actually solve problems.",
-  location: "Kushtia, Bangladesh",
+  location: "Dhaka, Bangladesh",
   email: "najmossalahin.adib@gmail.com",
   phone: "+880 1604524084",
   github: "https://github.com/NajmosSalahin",

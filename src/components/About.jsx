@@ -62,7 +62,7 @@ export default function About() {
                     size={18}
                     className="text-warm-accent dark:text-dark-accent shrink-0 mt-0.5"
                   />
-                  <div>
+                  <div className="space-y-0.5">
                     <p className="text-xs font-mono text-warm-muted dark:text-dark-muted">
                       {fact.label}
                     </p>
