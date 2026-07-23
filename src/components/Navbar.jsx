@@ -37,13 +37,14 @@ export default function Navbar({ dark, setDark }) {
 
   const initials = profile.name
     .split(" ")
+    .filter((w) => !w.includes(".") && w.length > 1)
     .map((w) => w[0])
     .join("")
     .slice(0, 2);
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 font-mono text-sm transition-all duration-300 ${
+      className={`fixed top-0 left-0 right-0 z-50 font-mono text-sm sm:text-base transition-all duration-300 ${
         scrolled
           ? "bg-warm-bg/90 dark:bg-dark-bg/90 backdrop-blur-md shadow-sm"
           : "bg-transparent"
@@ -54,12 +55,12 @@ export default function Navbar({ dark, setDark }) {
           to="hero"
           smooth
           duration={500}
-          className="text-lg font-bold tracking-tight cursor-pointer text-warm-accent dark:text-dark-accent"
+          className="text-xl font-bold tracking-tight cursor-pointer text-warm-accent dark:text-dark-accent"
         >
           {initials}
         </ScrollLink>
 
-        <div className="hidden md:flex items-center gap-6">
+        <div className="hidden md:flex items-center gap-8">
           {links.map((link) => (
             <ScrollLink
               key={link.to}
