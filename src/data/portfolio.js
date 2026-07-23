@@ -16,7 +16,7 @@ export const education = [
     degree: "B.Sc. in Statistics and Data Science",
     school: "Islamic University, Kushtia",
     period: "2025 - Present",
-    details: "Key courses: Data Analysis, Machine Learning, Artificial Intelligence, Advanced Python Programming",
+    details: null,
   },
   {
     degree: "Higher Secondary Certificate (HSC)",

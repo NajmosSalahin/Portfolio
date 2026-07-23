@@ -1,6 +1,15 @@
+import { useState } from "react";
 import { motion } from "framer-motion";
-import { MapPin, GraduationCap, Code } from "lucide-react";
+import { MapPin, GraduationCap, Code, User } from "lucide-react";
 import { profile } from "../data/portfolio";
+import profileImg from "../assets/profile.jpg";
+
+const initials = profile.name
+  .split(" ")
+  .filter((w) => !w.includes(".") && w.length > 1)
+  .map((w) => w[0])
+  .join("")
+  .slice(0, 2);
 
 const facts = [
   { icon: MapPin, label: "Based in", value: profile.location },
@@ -9,6 +18,8 @@ const facts = [
 ];
 
 export default function About() {
+  const [imgError, setImgError] = useState(false);
+
   return (
     <section id="about" className="py-20 px-4 sm:px-6">
       <div className="max-w-4xl mx-auto">
@@ -37,11 +48,20 @@ export default function About() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-80px" }}
             transition={{ delay: 0.1 }}
-            className="md:col-span-2"
+            className="flex flex-col items-center md:items-start"
           >
-            <p className="text-base sm:text-lg leading-relaxed text-warm-muted dark:text-dark-muted">
-              {profile.bio}
-            </p>
+            {imgError ? (
+              <div className="w-36 h-36 sm:w-40 sm:h-40 rounded-full bg-warm-accent/20 dark:bg-dark-accent/20 flex items-center justify-center text-warm-accent dark:text-dark-accent shrink-0">
+                <span className="text-3xl font-bold font-mono">{initials}</span>
+              </div>
+            ) : (
+              <img
+                src={profileImg}
+                alt={profile.name}
+                onError={() => setImgError(true)}
+                className="w-36 h-36 sm:w-40 sm:h-40 rounded-full object-cover border-2 border-warm-sand/30 dark:border-dark-sand/30"
+              />
+            )}
           </motion.div>
 
           <motion.div
@@ -49,7 +69,7 @@ export default function About() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-80px" }}
             transition={{ delay: 0.2 }}
-            className="flex flex-col gap-4"
+            className="md:col-span-2 flex flex-col gap-4"
           >
             {facts.map((fact) => {
               const Icon = fact.icon;
@@ -73,6 +93,18 @@ export default function About() {
             })}
           </motion.div>
         </div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-80px" }}
+          transition={{ delay: 0.15 }}
+          className="mt-8"
+        >
+          <p className="text-base sm:text-lg leading-relaxed text-warm-muted dark:text-dark-muted">
+            {profile.bio}
+          </p>
+        </motion.div>
       </div>
     </section>
   );

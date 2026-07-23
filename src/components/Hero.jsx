@@ -8,7 +8,7 @@ const lines = [
   "$ python portfolio.py --build",
   ">>> analyst.full_stack()",
   ">>> data → insights → apps",
-  ">>> Build complete. 🚀",
+  ">>> Build complete.",
 ];
 
 export default function Hero() {

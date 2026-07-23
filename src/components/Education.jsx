@@ -47,9 +47,11 @@ export default function Education() {
                   <p className="text-sm text-warm-muted dark:text-dark-muted mt-1">
                     {item.school}
                   </p>
-                  <p className="text-sm text-warm-muted dark:text-dark-muted mt-2 leading-relaxed">
-                    {item.details}
-                  </p>
+                  {item.details && (
+                    <p className="text-sm text-warm-muted dark:text-dark-muted mt-2 leading-relaxed">
+                      {item.details}
+                    </p>
+                  )}
                 </div>
               </motion.div>
             ))}
