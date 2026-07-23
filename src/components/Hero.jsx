@@ -65,7 +65,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="font-mono text-sm text-warm-accent dark:text-dark-accent mb-4"
+          className="font-mono text-base sm:text-lg text-warm-accent dark:text-dark-accent mb-4"
         >
           Hello, I'm
         </motion.p>
@@ -74,7 +74,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.1 }}
-          className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight mb-4"
+          className="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight mb-4"
         >
           {profile.name}
         </motion.h1>
@@ -83,7 +83,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
-          className="text-xl sm:text-2xl text-warm-muted dark:text-dark-muted mb-6"
+          className="text-lg sm:text-xl text-warm-muted dark:text-dark-muted mb-6"
         >
           {profile.title}
         </motion.p>
@@ -92,7 +92,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.3 }}
-          className="text-base sm:text-lg text-warm-muted dark:text-dark-muted max-w-2xl mx-auto mb-8"
+          className="text-sm sm:text-base text-warm-muted dark:text-dark-muted max-w-2xl mx-auto mb-8"
         >
           {profile.tagline}
         </motion.p>
