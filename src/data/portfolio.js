@@ -49,7 +49,7 @@ export const skills = {
   "Web Backend": ["Django", "FastAPI", "Express.js", "Next.js"],
   "Web Frontend": ["HTML5", "CSS3", "Tailwind CSS", "JavaScript"],
   Databases: ["MySQL", "PostgreSQL", "SQLite"],
-  Tools: ["Git", "Docker", "Jupyter Notebooks"],
+  Tools: ["Git", "Docker", "Jupyter Notebooks", "Postman", "Power BI"],
   "Languages Spoken": ["English (Fluent)", "Bangla (Fluent)", "Japanese (Basic)"],
 };
 
