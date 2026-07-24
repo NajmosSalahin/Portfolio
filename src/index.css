@@ -31,3 +31,12 @@ body {
 html {
   scroll-behavior: smooth;
 }
+
+.active-section {
+  color: var(--color-warm-accent);
+  text-shadow: 0 0 8px rgba(199, 91, 57, 0.35);
+}
+.dark .active-section {
+  color: var(--color-dark-accent);
+  text-shadow: 0 0 8px rgba(232, 145, 106, 0.35);
+}

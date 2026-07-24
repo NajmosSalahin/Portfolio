@@ -68,7 +68,7 @@ export default function Navbar({ dark, setDark }) {
               smooth
               duration={500}
               spy
-              activeClass="text-warm-accent dark:text-dark-accent"
+              activeClass="active-section"
               className="cursor-pointer text-warm-muted dark:text-dark-muted hover:text-warm-text dark:hover:text-dark-text transition-colors"
             >
               {link.label}
@@ -101,6 +101,7 @@ export default function Navbar({ dark, setDark }) {
               smooth
               duration={500}
               spy
+              activeClass="active-section"
               onClick={() => setOpen(false)}
               className="text-xl font-mono text-warm-muted dark:text-dark-muted hover:text-warm-accent dark:hover:text-dark-accent transition-colors cursor-pointer"
             >
