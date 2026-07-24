@@ -45,7 +45,7 @@ export const experience = [
 
 export const skills = {
   "Programming Languages": ["Python", "JavaScript", "TypeScript", "C++", "C", "R", "SQL"],
-  "Data Science": ["Pandas", "NumPy", "Matplotlib", "Seaborn", "Scikit-Learn", "R", "SPSS"],
+  "Data Science": ["Pandas", "NumPy", "Matplotlib", "R", "SPSS", "Plotly", "SciPy", "Statsmodels", "BeautifulSoup"],
   "Web Backend": ["Django", "Flask", "FastAPI"],
   "Web Frontend": ["HTML5", "CSS3", "Tailwind CSS", "JavaScript"],
   Databases: ["MySQL", "PostgreSQL", "SQLite"],
