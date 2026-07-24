@@ -102,7 +102,7 @@ export const projects = [
     name: "Kanji Tool",
     description:
       "Searchable, filterable database of 13,000+ Japanese Kanji characters with a heavily optimized, near-instant lookup interface.",
-    tech: ["HTML5", "CSS3", "JavaScript"],
+    tech: ["HTML5", "CSS3", "JavaScript", "Web Speech API"],
     github: "https://github.com/NajmosSalahin/Kanji_Tool",
     demo: "https://najmossalahin.github.io/Kanji_Tool/",
   },
@@ -110,7 +110,7 @@ export const projects = [
     name: "Breather",
     description:
       "Mindful breathing timer with 14+ techniques, custom pattern builder, 8 dark themes, voice guidance, ambient sound, and session history — single HTML file, zero dependencies.",
-    tech: ["HTML5", "CSS3", "JavaScript"],
+    tech: ["HTML5", "CSS3", "JavaScript", "Web Speech API"],
     github: "https://github.com/NajmosSalahin/Breather",
     demo: "https://najmossalahin.github.io/Breather/",
   },
