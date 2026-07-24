@@ -1,7 +1,8 @@
-import { motion } from "framer-motion";
+import { motion, useReducedMotion } from "framer-motion";
 import { experience } from "../data/portfolio";
 
 export default function Experience() {
+  const prefersReducedMotion = useReducedMotion();
   return (
     <section id="experience" className="py-20 px-4 sm:px-6">
       <div className="max-w-4xl mx-auto">
@@ -31,7 +32,7 @@ export default function Experience() {
             {experience.map((item, i) => (
               <motion.div
                 key={item.role}
-                initial={{ opacity: 0, x: -30 }}
+                initial={{ opacity: 0, x: prefersReducedMotion ? 0 : -30 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true, margin: "-80px" }}
                 transition={{ delay: i * 0.1 }}

@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { motion } from "framer-motion";
-import { MapPin, GraduationCap, Code, User } from "lucide-react";
+import { motion, useReducedMotion } from "framer-motion";
+import { MapPin, GraduationCap, Code, User, Languages } from "lucide-react";
 import { profile } from "../data/portfolio";
 import profileImg from "../assets/profile.jpg";
 
@@ -15,16 +15,18 @@ const facts = [
   { icon: MapPin, label: "Based in", value: profile.location },
   { icon: GraduationCap, label: "Studying", value: "B.Sc. Statistics & Data Science" },
   { icon: Code, label: "Focus", value: profile.focus },
+  { icon: Languages, label: "Languages", value: profile.languages },
 ];
 
 export default function About() {
+  const prefersReducedMotion = useReducedMotion();
   const [imgError, setImgError] = useState(false);
 
   return (
     <section id="about" className="py-20 px-4 sm:px-6">
       <div className="max-w-4xl mx-auto">
         <motion.h2
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: prefersReducedMotion ? 0 : 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-80px" }}
           className="font-mono text-sm text-warm-accent dark:text-dark-accent mb-2"
@@ -33,7 +35,7 @@ export default function About() {
         </motion.h2>
 
         <motion.h3
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: prefersReducedMotion ? 0 : 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-80px" }}
           transition={{ delay: 0.05 }}
@@ -44,7 +46,7 @@ export default function About() {
 
         <div className="grid md:grid-cols-3 gap-8">
           <motion.div
-            initial={{ opacity: 0, y: 30 }}
+            initial={{ opacity: 0, y: prefersReducedMotion ? 0 : 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-80px" }}
             transition={{ delay: 0.1 }}
@@ -65,7 +67,7 @@ export default function About() {
           </motion.div>
 
           <motion.div
-            initial={{ opacity: 0, y: 30 }}
+            initial={{ opacity: 0, y: prefersReducedMotion ? 0 : 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-80px" }}
             transition={{ delay: 0.2 }}
@@ -95,7 +97,7 @@ export default function About() {
         </div>
 
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: prefersReducedMotion ? 0 : 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-80px" }}
           transition={{ delay: 0.15 }}

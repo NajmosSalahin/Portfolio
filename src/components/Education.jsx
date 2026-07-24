@@ -1,12 +1,13 @@
-import { motion } from "framer-motion";
+import { motion, useReducedMotion } from "framer-motion";
 import { education } from "../data/portfolio";
 
 export default function Education() {
+  const prefersReducedMotion = useReducedMotion();
   return (
     <section id="education" className="py-20 px-4 sm:px-6 bg-warm-surface/50 dark:bg-dark-surface/50">
       <div className="max-w-4xl mx-auto">
         <motion.h2
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: prefersReducedMotion ? 0 : 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-80px" }}
           className="font-mono text-sm text-warm-accent dark:text-dark-accent mb-2"
@@ -15,7 +16,7 @@ export default function Education() {
         </motion.h2>
 
         <motion.h3
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: prefersReducedMotion ? 0 : 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-80px" }}
           transition={{ delay: 0.05 }}
@@ -31,7 +32,7 @@ export default function Education() {
             {education.map((item, i) => (
               <motion.div
                 key={item.degree}
-                initial={{ opacity: 0, x: -30 }}
+                initial={{ opacity: 0, x: prefersReducedMotion ? 0 : -30 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true, margin: "-80px" }}
                 transition={{ delay: i * 0.1 }}

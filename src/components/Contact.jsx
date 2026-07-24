@@ -1,13 +1,14 @@
-import { motion } from "framer-motion";
+import { motion, useReducedMotion } from "framer-motion";
 import { Mail, Phone, MapPin, Github, Linkedin, Send } from "lucide-react";
 import { profile } from "../data/portfolio";
 
 export default function Contact() {
+  const prefersReducedMotion = useReducedMotion();
   return (
     <section id="contact" className="py-20 px-4 sm:px-6">
       <div className="max-w-4xl mx-auto">
         <motion.h2
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: prefersReducedMotion ? 0 : 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-80px" }}
           className="font-mono text-sm text-warm-accent dark:text-dark-accent mb-2"
@@ -16,7 +17,7 @@ export default function Contact() {
         </motion.h2>
 
         <motion.h3
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: prefersReducedMotion ? 0 : 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-80px" }}
           transition={{ delay: 0.05 }}
@@ -27,7 +28,7 @@ export default function Contact() {
 
         <div className="grid md:grid-cols-2 gap-8">
           <motion.div
-            initial={{ opacity: 0, y: 30 }}
+            initial={{ opacity: 0, y: prefersReducedMotion ? 0 : 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-80px" }}
             transition={{ delay: 0.1 }}
@@ -90,7 +91,7 @@ export default function Contact() {
           </motion.div>
 
           <motion.div
-            initial={{ opacity: 0, y: 30 }}
+            initial={{ opacity: 0, y: prefersReducedMotion ? 0 : 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-80px" }}
             transition={{ delay: 0.2 }}

@@ -1,13 +1,14 @@
-import { motion } from "framer-motion";
+import { motion, useReducedMotion } from "framer-motion";
 import { Github, ExternalLink, Lock } from "lucide-react";
 import { projects } from "../data/portfolio";
 
 export default function Projects() {
+  const prefersReducedMotion = useReducedMotion();
   return (
     <section id="projects" className="py-20 px-4 sm:px-6">
       <div className="max-w-4xl mx-auto">
         <motion.h2
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: prefersReducedMotion ? 0 : 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-80px" }}
           className="font-mono text-sm text-warm-accent dark:text-dark-accent mb-2"
@@ -16,7 +17,7 @@ export default function Projects() {
         </motion.h2>
 
         <motion.h3
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: prefersReducedMotion ? 0 : 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-80px" }}
           transition={{ delay: 0.05 }}
@@ -29,7 +30,7 @@ export default function Projects() {
           {projects.map((project, i) => (
             <motion.div
               key={project.name}
-              initial={{ opacity: 0, y: 30 }}
+              initial={{ opacity: 0, y: prefersReducedMotion ? 0 : 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-80px" }}
               transition={{ delay: i * 0.08 }}

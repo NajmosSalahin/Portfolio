@@ -1,13 +1,14 @@
-import { motion } from "framer-motion";
+import { motion, useReducedMotion } from "framer-motion";
 import { ExternalLink, Award } from "lucide-react";
 import { certifications } from "../data/portfolio";
 
 export default function Certifications() {
+  const prefersReducedMotion = useReducedMotion();
   return (
     <section id="certifications" className="py-20 px-4 sm:px-6 bg-warm-surface/50 dark:bg-dark-surface/50">
       <div className="max-w-4xl mx-auto">
         <motion.h2
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: prefersReducedMotion ? 0 : 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-80px" }}
           className="font-mono text-sm text-warm-accent dark:text-dark-accent mb-2"
@@ -16,7 +17,7 @@ export default function Certifications() {
         </motion.h2>
 
         <motion.h3
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: prefersReducedMotion ? 0 : 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-80px" }}
           transition={{ delay: 0.05 }}
@@ -32,7 +33,7 @@ export default function Certifications() {
               href={cert.link}
               target="_blank"
               rel="noopener noreferrer"
-              initial={{ opacity: 0, y: 30 }}
+              initial={{ opacity: 0, y: prefersReducedMotion ? 0 : 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-80px" }}
               transition={{ delay: i * 0.1 }}

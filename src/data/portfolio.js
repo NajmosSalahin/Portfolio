@@ -9,6 +9,7 @@ export const profile = {
   linkedin: "https://www.linkedin.com/in/md-najmos-salahin-185106371/",
   bio: "A data enthusiast and self-taught developer from Bangladesh with a strong foundation in Python. I don't just analyze data — I build full applications around it, combining a Statistics & Data Science background with hands-on full-stack development.",
   focus: "Python for backend & data work, JavaScript for frontend.",
+  languages: "English (Fluent), Bangla (Fluent), Japanese (N5)",
 };
 
 export const education = [
@@ -50,7 +51,6 @@ export const skills = {
   "Web Frontend": ["HTML5", "CSS3", "Tailwind CSS", "JavaScript"],
   Databases: ["MySQL", "PostgreSQL", "SQLite"],
   Tools: ["Git", "Docker", "Jupyter Notebooks", "Postman", "Power BI"],
-  "Languages Spoken": ["English (Fluent)", "Bangla (Fluent)", "Japanese (Basic)"],
 };
 
 export const certifications = [
