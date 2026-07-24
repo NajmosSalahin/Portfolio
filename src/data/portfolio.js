@@ -83,46 +83,51 @@ export const certifications = [
 
 export const projects = [
   {
-    name: "Word-Explorer",
+    name: "Mindspace",
     description:
-      "An AI-powered vocabulary tool that surfaces definitions, synonyms, antonyms, and pronunciation, then embeds new words into dynamic stories and quizzes for active-recall practice.",
-    tech: ["JavaScript", "Python", "NLP", "Tailwind CSS"],
-    github: "https://github.com/NajmosSalahin/Word-Explorer",
+      "Full-stack event management platform with ticketing, Stripe payments, QR check-in, real-time notifications, and role-based dashboards for users, organizers, and admins.",
+    tech: ["React", "Node.js", "Express", "MongoDB", "Stripe", "Socket.io"],
+    github: "https://github.com/NajmosSalahin/mindspace",
+    demo: "https://mindspace-1-d09g.onrender.com/",
   },
   {
-    name: "Zenith-Tracker",
+    name: "Focused",
     description:
-      "A personal well-being dashboard that logs mood, habits, and hydration, then visualizes how they connect — Django backend, interactive JS frontend.",
-    tech: ["Django", "SQLite", "JavaScript", "Python"],
-    github: "https://github.com/NajmosSalahin/Zenith_Tracker",
-  },
-  {
-    name: "Link-Vault",
-    description:
-      "A local-first bookmark manager: drag-and-drop grid, smart search and sorting, deduplication, and JSON/HTML import-export, all persisted client-side.",
-    tech: ["HTML5", "CSS3", "JavaScript", "Local Storage API"],
-    github: "https://github.com/NajmosSalahin/Link_Vault",
-    demo: "https://najmossalahin.github.io/Link_Vault/",
+      "Full-stack time-tracking and productivity app centered on a Pomodoro timer, with project organization, time-based goals, weather correlation analytics, and a command palette.",
+    tech: ["React", "Node.js", "Express", "MongoDB", "JWT", "Vite"],
+    github: "https://github.com/NajmosSalahin/focused-mern",
+    demo: "https://focused-4l3h.onrender.com/",
   },
   {
     name: "Kanji Tool",
     description:
-      "A searchable, filterable database of 13,000+ Japanese Kanji characters with a heavily optimized, near-instant lookup interface.",
+      "Searchable, filterable database of 13,000+ Japanese Kanji characters with a heavily optimized, near-instant lookup interface.",
     tech: ["HTML5", "CSS3", "JavaScript"],
     github: "https://github.com/NajmosSalahin/Kanji_Tool",
+    demo: "https://najmossalahin.github.io/Kanji_Tool/",
   },
   {
-    name: "Kana Learning Tool",
+    name: "Breather",
     description:
-      "A lightweight, interactive web app for learning Japanese Hiragana and Katakana through a friendly, exploratory interface.",
+      "Mindful breathing timer with 14+ techniques, custom pattern builder, 8 dark themes, voice guidance, ambient sound, and session history — single HTML file, zero dependencies.",
     tech: ["HTML5", "CSS3", "JavaScript"],
-    github: "https://github.com/NajmosSalahin/Kana_Learning_Tool",
+    github: "https://github.com/NajmosSalahin/Breather",
+    demo: "https://najmossalahin.github.io/Breather/",
   },
   {
-    name: "FocusFlow",
+    name: "KanaSpace",
     description:
-      "A comprehensive to-do system with Pomodoro timers, calendar integration, and priority logic.",
-    tech: ["SQLite", "JavaScript", "CSS3", "LocalAPI"],
-    github: null,
+      "Interactive Japanese kana learning app with 30+ themes, 20+ Japanese fonts, quiz system, and a clean distraction-free interface — fully browser-based, zero dependencies.",
+    tech: ["HTML5", "CSS3", "JavaScript"],
+    github: "https://github.com/NajmosSalahin/KanaSpace",
+    demo: "https://najmossalahin.github.io/KanaSpace/",
+  },
+  {
+    name: "Word Explorer",
+    description:
+      "AI-powered vocabulary tool that surfaces definitions, synonyms, antonyms, and pronunciation, then embeds new words into dynamic stories and quizzes for active-recall practice.",
+    tech: ["JavaScript", "Python", "NLP", "Tailwind CSS"],
+    github: "https://github.com/NajmosSalahin/Word-Explorer",
+    demo: "https://najmossalahin.github.io/Word-Explorer/",
   },
 ];
