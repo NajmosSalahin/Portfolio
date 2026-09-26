@@ -40,15 +40,3 @@ html {
   color: var(--color-dark-accent);
   text-shadow: 0 0 8px rgba(232, 145, 106, 0.35);
 }
-
-@keyframes cert-marquee {
-  to {
-    transform: translateX(-50%);
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .cert-track > [aria-hidden="true"] {
-    display: none;
-  }
-}
