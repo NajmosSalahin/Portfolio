@@ -58,7 +58,7 @@ export const certifications = [
     name: "Applied Data Analysis with SPSS",
     issuer: "Islamic University Science Club (IUSC) & StatX",
     registeredBy: "Ministry of Science and Technology, Bangladesh",
-    date: "October 2023",
+    date: "October 2025",
     details:
       "Intensive hands-on training in dataset management and statistical output interpretation using SPSS.",
     link: "https://github.com/NajmosSalahin/NajmosSalahin/blob/main/certificates/IUSC_StatX_SPSS_Certificate.pdf",
@@ -70,6 +70,16 @@ export const certifications = [
     details:
       "Self-paced course covering leading data science and analytics practices, methodologies, and tools.",
     link: "https://github.com/NajmosSalahin/NajmosSalahin/blob/main/certificates/HP_LIFE_Data_Science_Analytics_Certificate.pdf",
+  },
+  {
+    name: "Python Programming Bootcamp",
+    issuer: "Islamic University Science Club (IUSC)",
+    registeredBy:
+      "National Science and Technology Museum, Ministry of Science and Technology, Bangladesh (Reg. No: GA-305/2025)",
+    date: "April 2026",
+    details:
+      "Actively participated in and completed an intensive Python programming bootcamp organized by IUSC, covering Python fundamentals, problem solving, and hands-on programming practice.",
+    link: "https://github.com/NajmosSalahin/NajmosSalahin/blob/main/certificates/Python_Certificate.png",
   },
   {
     name: "AI for Beginners",
